@@ -1,0 +1,12 @@
+services:
+  course-service:
+    build:
+      context: ./course-service
+    ports:
+      - "8002:8002"
+
+  student-service:
+    build:
+      context: ./student-service
+    ports:
+      - "8001:8001"
